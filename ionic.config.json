@@ -1,0 +1,8 @@
+{
+  "name": "Swaps",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "d41dfd50"
+}
