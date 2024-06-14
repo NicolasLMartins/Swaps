@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+.body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+ion-card {
+    box-shadow: none;
+}
+
+.logo {
+    width: 300px;
+    margin: 100px 0 150px 0;
+}
+
+.sign-in-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 540px;
+    height: 820px;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+}
+
+.sign-in-form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+}
+
+.sign-in-form-header {
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    background-color: #E6FEB3;
+    position: relative;
+}
+
+.sign-in-form-footer {
+    position: relative;
+    text-align: center;
+    height: 340px;
+    width: 100%;
+    background-color: #F8F8F8;
+}
+
+.league-spartan-title {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+    color: #5EC22F;
+}
+
+ion-content {
+    --ion-background-color: #fff !important;
+}
+
+ion-header {
+    position: absolute;
+}
+
+ion-toolbar {
+    --ion-background-color: #fff;
+    opacity: 0;
+}
