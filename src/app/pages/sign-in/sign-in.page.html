@@ -22,8 +22,20 @@
 
         <ion-card-content class="sign-in-form-content">
           <form action="" method="post" class="sign-in-form">
-            <input id="username" name="username" type="text" placeholder="Email ou nome de usuário">
-            <input id="password" name="password" type="text" placeholder="Senha">
+            <div class="input-group">
+              <input id="username" name="username" type="text" class="text-input">
+              <label for="username" class="text-input-label open-sans-label">Email ou nome de usuário</label>
+            </div>
+
+            <div class="input-group">
+              <input id="password" name="password" type="text" class="text-input">
+              <label for="password" class="text-input-label open-sans-label">Senha</label>
+            </div>
+
+            <div class="input-group remember-me">
+              <input type="checkbox" name="remember-me" id="remember-me" class="check-input">
+              <label for="remember-me" class="label-remember-me"></label>
+            </div>
           </form>
         </ion-card-content>
 
