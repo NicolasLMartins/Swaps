@@ -13,8 +13,8 @@
 }
 
 .logo {
-    width: 300px;
-    margin: 100px 0 150px 0;
+    width: 15rem;
+    margin: 5rem 0 7.5rem 0;
 }
 
 .sign-in-form-wrapper {
@@ -22,10 +22,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 540px;
-    height: 820px;
-    border-radius: 20px;
-    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+    width: 27rem;
+    height: 41rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
 }
 
 
@@ -50,27 +50,27 @@
         align-items: center;
 
         &:first-child {
-            margin-bottom: 60px;
+            margin-bottom: 6rem;
         }
 
         &:last-child {
-            margin-top: 25px;
+            margin-top: 2.5rem;
         }
         
         .text-input {
             outline: #F61643 solid 3px;
             border: none;
-            border-radius: 10px;
-            width: 380px;
-            font-size: 24px;
-            line-height: 60px;
-            padding-left: 30px;
+            border-radius: 1rem;
+            width: 38rem;
+            font-size: 2.4rem;
+            line-height: 6rem;
+            padding-left: 3rem;
             color: #505050;
         }
 
         .text-input-label {
             position: absolute;
-            left: 30px;
+            left: 3rem;
             pointer-events: none;
         }
         
@@ -79,7 +79,7 @@
             font-optical-sizing: auto;
             font-weight: 600;
             font-style: italic;
-            font-size: 24px;
+            font-size: 2.4rem;
             line-height: 60px;
             color: #aaa;
         }
@@ -93,7 +93,7 @@
 .sign-in-form-header {
     text-align: center;
     width: 100%;
-    height: 150px;
+    height: 15rem;
     background-color: #E6FEB3;
     position: relative;
 }
@@ -101,7 +101,7 @@
 .sign-in-form-footer {
     position: relative;
     text-align: center;
-    height: 340px;
+    height: 34rem;
     width: 100%;
     background-color: #F8F8F8;
 }
@@ -111,8 +111,8 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 100px;
-    line-height: 150px;
+    font-size: 10rem;
+    line-height: 15rem;
     color: #5EC22F;
 }
 
