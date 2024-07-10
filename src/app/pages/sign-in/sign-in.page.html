@@ -15,31 +15,36 @@
     <ion-img class="logo" src="assets/Logo.svg"></ion-img>
 
     <ion-card-content class="ion-no-padding ion-no-border">
-      <ion-card class="sign-in-form-wrapper ion-no-margin">
-        <ion-card-header class="sign-in-form-header">
-          <ion-card-title class="league-spartan-title">SwapS</ion-card-title>
+      <ion-card class="sign-in-wrapper ion-no-margin">
+        <ion-card-header class="sign-in-header">
+          <ion-card-title class="league-spartan">SwapS</ion-card-title>
         </ion-card-header>
 
-        <ion-card-content class="sign-in-form-content">
+        <ion-card-content class="sign-in-content">
           <form action="" method="post" class="sign-in-form">
             <div class="input-group">
               <input id="username" name="username" type="text" class="text-input" placeholder="">
-              <label for="username" class="text-input-label open-sans-label">Email ou nome de usuário</label>
+              <label for="username" class="text-input-label open-sans">Email ou nome de usuário</label>
             </div>
 
             <div class="input-group">
-              <input id="password" name="password" type="text" class="text-input" placeholder="">
-              <label for="password" class="text-input-label open-sans-label">Senha</label>
+              <input id="password" name="password" type="password" class="text-input" placeholder="">
+              <label for="password" class="text-input-label open-sans">Senha</label>
             </div>
 
             <div class="input-group remember-me">
               <input name="remember-me" id="remember-me" type="checkbox" class="check-input">
-              <label for="remember-me" class="label-remember-me open-sans-label">Lembrar de mim</label>
+              <span class="checkmark"></span>
+              <label for="remember-me" class="label-remember-me open-sans">Lembrar de mim</label>
             </div>
           </form>
         </ion-card-content>
 
-        <footer class="sign-in-form-footer"></footer>
+        <footer class="sign-in-footer">
+          <button class="login-button open-sans default">Fazer login</button>
+          <button class="login-button open-sans google">Fazer login</button>
+          <button class="login-button open-sans linkedin">Fazer login</button>
+        </footer>
       </ion-card>
     </ion-card-content>
   </ion-card>

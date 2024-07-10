@@ -17,143 +17,28 @@
     margin: 5rem 0 7.5rem 0;
 }
 
-.sign-in-form-wrapper {
+.sign-in-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 36rem;
-    height: 50rem;
+    height: auto; //50rem
     border-radius: 1rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
 }
 
-
-.sign-in-form-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    flex: 1;
-}
-
-.sign-in-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    .input-group {
-        position: relative;
-        display: flex;
-        align-items: center;
-
-        // &:first-child {
-        margin-top: 3rem;
-        // }
-
-        // &:last-child {
-        margin-bottom: 3rem;
-        // }
-
-        .text-input {
-            outline: #F61643 solid 0.3rem;
-            border: none;
-            border-radius: 1rem;
-            width: 30rem;
-            font-size: 2.4rem;
-            line-height: 6rem;
-            padding-left: 3rem;
-            color: #505050;
-
-            &:not(:placeholder-shown)~.text-input-label {
-                animation-name: moveUpAndLeft;
-            }
-
-            ~.text-input-label {
-                position: absolute;
-                left: 3rem;
-                background: transparent;
-                pointer-events: none;
-                transform-origin: left center;
-                animation: 150ms cubic-bezier(.4, 0, .2, 1) forwards;
-                animation-name: moveRightAndDown;
-            }
-
-            @keyframes moveUpAndLeft {
-                0% {
-                    transform: scale(1);
-                }
-
-                // 30% {
-                //     transform: translate(0, -30px);
-                //     background-color: #fff;
-                // }
-
-                100% {
-                    transform: translate(-1.5rem, -3rem) scale(.75);
-                    background-color: #fff;
-                    padding: 0 0.5rem;
-                }
-            }
-
-            @keyframes moveRightAndDown {
-                100% {
-                    transform: translate(0, 0) scale(1);
-                }
-
-                // 70% {
-                // transform: translate(0, 0);
-                // background-color: #fff;
-                // }
-
-                0% {
-                    transform: translate(-1.5rem, -3rem) scale(.75);
-                    background-color: #fff;
-                    padding: 0 0.5rem;
-                }
-            }
-        }
-
-        .open-sans-label {
-            font-family: "Open Sans", "Roboto", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 600;
-            font-style: italic;
-            font-size: 2.4rem;
-            color: #aaa;
-        }
-
-        &.remember-me {
-            margin-top: unset;
-            align-self: start;
-        }
-
-        &.remember-me {
-            input#remember-me {
-                width: 2.4rem;
-                height: 2.4rem;
-                outline: #F61643 solid 0.3rem;
-                background-color: #fff;
-            }
-
-            .label-remember-me {
-                margin-left: 1.5rem;
-            }
-        }
-    }
-}
-
-ion-card-header.sign-in-form-header {
+ion-card-header.sign-in-header {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 10rem;
+    flex-grow: 1;
+    padding: 1rem 0;
+    // height: 10rem;
     background-color: #E6FEB3;
 
-    ion-card-title.league-spartan-title {
+    .league-spartan {
         font-family: "League Spartan", sans-serif;
         font-optical-sizing: auto;
         font-weight: 700;
@@ -163,11 +48,161 @@ ion-card-header.sign-in-form-header {
     }
 }
 
-.sign-in-form-footer {
-    text-align: center;
-    flex: 1;
+.sign-in-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+
+    .sign-in-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem;
+
+        .input-group {
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            &:first-child {
+                margin-bottom: 6rem;
+            }
+
+            &:nth-child(2) {
+                margin-bottom: 2.5rem;
+            }
+
+            .text-input {
+                outline: #F61643 solid 0.3rem;
+                border: none;
+                border-radius: 1rem;
+                width: 100%;
+                font-size: 2.4rem;
+                height: 5rem;
+                padding: 0 3rem;
+                color: #505050;
+
+                &:not(:placeholder-shown)~.text-input-label {
+                    animation-name: moveUpAndLeft;
+                }
+
+                &~.text-input-label {
+                    position: absolute;
+                    left: 3rem;
+                    background: transparent;
+                    pointer-events: none;
+                    transform-origin: left center;
+                    animation: 200ms cubic-bezier(.4, 0, .2, 1) forwards;
+                    animation-name: moveRightAndDown;
+                }
+
+                @keyframes moveUpAndLeft {
+                    0% {
+                        transform: scale(1);
+                    }
+
+                    30% {
+                        transform: translate(0, -30px);
+                        background-color: #fff;
+                    }
+
+                    100% {
+                        transform: translate(-1.5rem, -3rem) scale(.75);
+                        background-color: #fff;
+                        padding: 0 0.5rem;
+                    }
+                }
+
+                @keyframes moveRightAndDown {
+                    0% {
+                        transform: translate(-1.5rem, -3rem) scale(.75);
+                        background-color: #fff;
+                        padding: 0 0.5rem;
+                    }
+
+                    70% {
+                        transform: translate(0, -30px);
+                        background-color: #fff;
+                    }
+
+                    100% {
+                        transform: translate(0, 0) scale(1);
+                    }
+                }
+            }
+
+            .open-sans {
+                font-family: "Open Sans", "Roboto", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 600;
+                font-style: italic;
+                font-size: 2.4rem;
+                color: #aaa;
+            }
+
+            &.remember-me {
+                align-self: start;
+
+                input.check-input {
+                    opacity: 0;
+                    position: absolute;
+
+                    &:checked {
+                        display: block;
+                    }
+                }
+
+                span.checkmark {
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    border-radius: .25rem;
+                    outline: #F61643 solid 0.3rem;
+                    background-color: #fff;
+                    transition: all 200ms ease-in-out;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 1.2rem;
+                        width: 1.2rem;
+                        transform-origin: center;
+                        transform: scale(0) translateX(.2rem) translateY(.2rem);
+                        border-radius: .25rem;
+                        background-color: #F61643;
+                        pointer-events: none;
+                        transition: all 50ms ease-in-out;
+                    }
+                }
+
+                input#remember-me:checked~span.checkmark::after {
+                    transform: scale(1) translateX(.2rem) translateY(.2rem);
+                }
+
+                .label-remember-me {
+                    color: #bbb;
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.sign-in-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
     width: 100%;
     background-color: #F8F8F8;
+    padding: 3rem 6rem;
+
+    button.login-button {
+        height: 6rem;
+    }
 }
 
 ion-content,
