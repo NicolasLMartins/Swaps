@@ -150,10 +150,6 @@ ion-card-header.sign-in-header {
                 input.check-input {
                     opacity: 0;
                     position: absolute;
-
-                    &:checked {
-                        display: block;
-                    }
                 }
 
                 span.checkmark {
