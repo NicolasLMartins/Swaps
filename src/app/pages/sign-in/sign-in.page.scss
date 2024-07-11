@@ -4,6 +4,24 @@
     margin: 0;
 }
 
+.open-sans {
+    font-family: "Open Sans", "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2rem;
+    color: #aaa;
+}
+
+.league-spartan {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8rem;
+    color: #5EC22F;
+}
+
 .body {
     display: flex;
     align-items: center;
@@ -37,15 +55,6 @@ ion-card-header.sign-in-header {
     padding: 1rem 0;
     // height: 10rem;
     background-color: #E6FEB3;
-
-    .league-spartan {
-        font-family: "League Spartan", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 8rem;
-        color: #5EC22F;
-    }
 }
 
 .sign-in-content {
@@ -133,15 +142,6 @@ ion-card-header.sign-in-header {
                         transform: translate(0, 0) scale(1);
                     }
                 }
-            }
-
-            .open-sans {
-                font-family: "Open Sans", "Roboto", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: 600;
-                font-style: italic;
-                font-size: 2.4rem;
-                color: #aaa;
             }
 
             &.remember-me {
