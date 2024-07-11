@@ -153,20 +153,21 @@ ion-card-header.sign-in-header {
                 }
 
                 span.checkmark {
+                    position: relative;
                     width: 1.6rem;
                     height: 1.6rem;
                     border-radius: .25rem;
                     outline: #F61643 solid 0.3rem;
                     background-color: #fff;
+                    pointer-events: none;
                     transition: all 200ms ease-in-out;
 
                     &::after {
                         content: '';
                         position: absolute;
-                        height: 1.2rem;
                         width: 1.2rem;
-                        transform-origin: center;
-                        transform: scale(0) translateX(.2rem) translateY(.2rem);
+                        height: 1.2rem;
+                        transform: translate(.2rem, .2rem) scale(0);
                         border-radius: .25rem;
                         background-color: #F61643;
                         pointer-events: none;
@@ -175,7 +176,7 @@ ion-card-header.sign-in-header {
                 }
 
                 input#remember-me:checked~span.checkmark::after {
-                    transform: scale(1) translateX(.2rem) translateY(.2rem);
+                    transform: translate(.2rem, .2rem) scale(1);
                 }
 
                 .label-remember-me {
