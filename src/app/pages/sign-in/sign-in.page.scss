@@ -128,6 +128,7 @@ ion-card-header.sign-in-header {
                 padding: 0 2rem;
                 color: #505050;
 
+                &:focus~.text-input-label,
                 &:not(:placeholder-shown)~.text-input-label {
                     animation-name: moveUpAndLeft;
                 }
@@ -153,7 +154,7 @@ ion-card-header.sign-in-header {
                     }
 
                     100% {
-                        transform: translate(-1.5rem, -3rem) scale(.75);
+                        transform: translate(-1rem, -3rem) scale(.75);
                         background-color: #fff;
                         padding: 0 0.5rem;
                     }
@@ -161,7 +162,7 @@ ion-card-header.sign-in-header {
 
                 @keyframes moveRightAndDown {
                     0% {
-                        transform: translate(-1.5rem, -3rem) scale(.75);
+                        transform: translate(-1rem, -3rem) scale(.75);
                         background-color: #fff;
                         padding: 0 0.5rem;
                     }
