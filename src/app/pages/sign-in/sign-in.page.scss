@@ -113,7 +113,12 @@ ion-card-header.sign-in-header {
                 margin-bottom: 2.5rem;
             }
 
+            &:nth-child(3) {
+                margin-bottom: 4rem;
+            }
+
             .text-input {
+                position: relative;
                 outline: #F61643 solid 0.3rem;
                 border: none;
                 border-radius: 1rem;
@@ -219,6 +224,12 @@ ion-card-header.sign-in-header {
                     margin-left: 1.5rem;
                 }
             }
+        }
+
+        .forgot-password {
+            color: #ddd;
+            text-decoration: none;
+            font-size: 1.6rem;
         }
     }
 }
