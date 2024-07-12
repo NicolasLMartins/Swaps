@@ -24,11 +24,17 @@
           <form action="" method="post" class="sign-in-form">
             <div class="input-group">
               <input id="username" name="username" type="text" class="text-input" placeholder="">
+              <div class="icon-wrapper">
+                <img class="icon user" src="assets/User.svg" alt="Default login">
+              </div>
               <label for="username" class="text-input-label open-sans">Email ou nome de usuário</label>
             </div>
 
             <div class="input-group">
               <input id="password" name="password" type="password" class="text-input" placeholder="">
+              <div class="icon-wrapper">
+                <img class="icon lock" src="assets/Lock.svg" alt="Default login">
+              </div>
               <label for="password" class="text-input-label open-sans">Senha</label>
             </div>
 
@@ -41,9 +47,24 @@
         </ion-card-content>
 
         <footer class="sign-in-footer">
-          <button class="login-button open-sans default"><div class="icon"><img class="login-icon" src="assets/Logo.svg" alt="Default login"></div>Fazer login</button>
-          <button class="login-button open-sans google"><div class="icon"><img class="login-icon" src="assets/Google.svg" alt="Google login"></div>Fazer login</button>
-          <button class="login-button open-sans linkedin"><div class="icon"><img class="login-icon" src="assets/Linkedin.svg" alt="Linkedin login"></div>Fazer login</button>
+          <button class="login-button open-sans default">
+            <div class="icon-wrapper">
+              <img class="icon" src="assets/Logo.svg" alt="Default login">
+            </div>
+            Fazer login
+          </button>
+          <button class="login-button open-sans google">
+            <div class="icon-wrapper">
+              <img class="icon" src="assets/Google.svg" alt="Google login">
+            </div>
+            Fazer login
+          </button>
+          <button class="login-button open-sans linkedin">
+            <div class="icon-wrapper">
+              <img class="icon" src="assets/Linkedin.svg" alt="Linkedin login">
+            </div>
+            Fazer login
+          </button>
         </footer>
       </ion-card>
     </ion-card-content>

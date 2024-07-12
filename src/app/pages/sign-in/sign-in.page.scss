@@ -58,6 +58,23 @@ ion-card-header.sign-in-header {
     background-color: #E6FEB3;
 }
 
+.icon-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: .6rem;
+    width: 6rem;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.icon {
+    width: 3rem;
+    font-size: .5rem;
+    color: #505050;
+}
+
 .sign-in-content {
     display: flex;
     justify-content: center;
@@ -71,12 +88,22 @@ ion-card-header.sign-in-header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 3rem;
+        padding: 3rem 2.5rem 1rem 2.5rem;
 
         .input-group {
             position: relative;
             display: flex;
             align-items: center;
+
+            &:not(:has(.check-input))::after {
+                content: '';
+                position: absolute;
+                background-color: #F61643;
+                inset: 0;
+                width: 7rem;
+                transform: translateX(24rem);
+                border-radius: 0 1rem 1rem 0;
+            }
 
             &:first-child {
                 margin-bottom: 6rem;
@@ -143,6 +170,13 @@ ion-card-header.sign-in-header {
                         transform: translate(0, 0) scale(1);
                     }
                 }
+            }
+
+            .icon-wrapper {
+                background-color: transparent;
+                position: absolute;
+                transform: translateX(24rem);
+                z-index: 1000;
             }
 
             &.remember-me {
@@ -233,24 +267,6 @@ footer.sign-in-footer {
             --saturation: 61%;
             --lightness: 47%;
         }
-
-        .icon {
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            inset: .6rem;
-            width: 6rem;
-            border-radius: 1rem;
-            background-color: #fff;
-        }
-        
-        .login-icon {
-            width: 3rem;
-            font-size: .5rem;
-            color: #505050;
-        }
-
     }
 }
 
